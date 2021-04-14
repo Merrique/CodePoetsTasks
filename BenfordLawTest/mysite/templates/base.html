@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+* {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+    background-color: black;
+    padding: 10px;
+    color: white
+}
+
+.content {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.results {
+  background-color: lightsteelblue;
+  padding: 10px;
+}
+
+.error {
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+</style>
+</head>
+    
+<body>
+    <div class ="header">
+        <h1>Benford's Law Test</h1>
+    </div>
+
+    {% block content %}
+    {% endblock %} 
+
+</body>
+</html>

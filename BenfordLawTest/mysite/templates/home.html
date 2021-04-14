@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class ="content">
+    <h2>Select file with data</h2>
+     <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <h3>Submit the title of the column with the data </h2>
+    <label for="columntitle">Colum tittle:</label>
+    <input type="text" name="columntitle">
+    <br><br>
+    <button type="submit">Upload</button>
+    </form>
+</div>
+
+
+
+{% endblock %}
+
